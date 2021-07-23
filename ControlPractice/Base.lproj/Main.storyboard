@@ -1,24 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ControlPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pUq-F1-Zog">
+                                <rect key="frame" x="35" y="176" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchesToggled:" destination="BYZ-38-t0r" eventType="valueChanged" id="rzC-aa-0qA"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cw4-gS-Wo4">
+                                <rect key="frame" x="102" y="176" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchesToggled:" destination="BYZ-38-t0r" eventType="valueChanged" id="WWd-pl-ao6"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0sI-Nv-est">
+                                <rect key="frame" x="230" y="176" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchesToggled:" destination="BYZ-38-t0r" eventType="valueChanged" id="Lju-Dr-l9p"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" tag="8" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LXT-AI-k73">
+                                <rect key="frame" x="297" y="176" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchesToggled:" destination="BYZ-38-t0r" eventType="valueChanged" id="ncp-qV-9as"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" tag="16" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XLU-mM-ShH">
+                                <rect key="frame" x="35" y="270" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchesToggled:" destination="BYZ-38-t0r" eventType="valueChanged" id="LzY-yM-fS8"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" tag="32" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pc7-z0-WMy">
+                                <rect key="frame" x="102" y="270" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchesToggled:" destination="BYZ-38-t0r" eventType="valueChanged" id="mLw-5O-TnJ"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" tag="64" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YLa-Rw-tM5">
+                                <rect key="frame" x="230" y="270" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchesToggled:" destination="BYZ-38-t0r" eventType="valueChanged" id="McQ-we-3OG"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" tag="128" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CXw-9K-fbr">
+                                <rect key="frame" x="297" y="270" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchesToggled:" destination="BYZ-38-t0r" eventType="valueChanged" id="LNn-9w-QxY"/>
+                                </connections>
+                            </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Oyc-9b-Le5">
+                                <rect key="frame" x="33" y="371" width="313" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderMoved" destination="BYZ-38-t0r" eventType="valueChanged" id="x5E-hv-Jze"/>
+                                </connections>
+                            </slider>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="255" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cut-6i-vds">
+                                <rect key="frame" x="162" y="476" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldEdited" destination="BYZ-38-t0r" eventType="editingChanged" id="ZnF-nj-EAG"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O33-Yg-GGU">
+                                <rect key="frame" x="162" y="59" width="54" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="255"/>
+                                <connections>
+                                    <action selector="buttonPresed" destination="BYZ-38-t0r" eventType="touchUpInside" id="rQ3-Sf-8QS"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="Button" destination="O33-Yg-GGU" id="OyV-gS-ldn"/>
+                        <outlet property="slider" destination="Oyc-9b-Le5" id="lPG-iG-kuY"/>
+                        <outlet property="textField" destination="Cut-6i-vds" id="bat-0g-RV5"/>
+                        <outletCollection property="switches" destination="pUq-F1-Zog" collectionClass="NSMutableArray" id="gwk-JR-UXE"/>
+                        <outletCollection property="switches" destination="pUq-F1-Zog" collectionClass="NSMutableArray" id="Z9R-8b-VXC"/>
+                        <outletCollection property="switches" destination="cw4-gS-Wo4" collectionClass="NSMutableArray" id="FDP-la-2lD"/>
+                        <outletCollection property="switches" destination="0sI-Nv-est" collectionClass="NSMutableArray" id="o7P-ZX-9mq"/>
+                        <outletCollection property="switches" destination="LXT-AI-k73" collectionClass="NSMutableArray" id="EjV-Sw-ImT"/>
+                        <outletCollection property="switches" destination="XLU-mM-ShH" collectionClass="NSMutableArray" id="bRO-M0-jbb"/>
+                        <outletCollection property="switches" destination="Pc7-z0-WMy" collectionClass="NSMutableArray" id="hCb-M1-JNc"/>
+                        <outletCollection property="switches" destination="YLa-Rw-tM5" collectionClass="NSMutableArray" id="5EU-83-IYc"/>
+                        <outletCollection property="switches" destination="CXw-9K-fbr" collectionClass="NSMutableArray" id="0hW-pL-xyt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-238" y="107"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
